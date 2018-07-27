@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header"
+    "name name name name name"
+    "main main main main main"
+    "title title title title title";
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer"; */
+}
+
+.header {
+  grid-area: header;
+}
+
+.catName {
+  grid-area: name;
+}
+
+.heroImg {
+  grid-area: main;
+  width: 300px;
+  height: 300px;
+  padding: 1rem;
+}
+
+.Ray {
+  grid-column-start: 2;
+}
+
+.Lita {
+  grid-column-start: 4;
+}
+
+.countTitle {
+  grid-area: main;
+  padding: 1rem;
+}
+
+.count {
+  grid-area: main;
+}

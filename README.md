@@ -12,6 +12,8 @@ This is a project developed for the Udacity Front End Nano Degree program to pra
 
 The requirements are to display a picture of a cat and the number of clicks. (Which should increase with every click.) The specs of the layout don't matter, so I can style it as I desire.
 
+I've tried to use CSS grid to style the layout to test my abilities, as I am very comfortable with flexbox, but not as much with grid. 
+
 ## How to Run
 To run:
 1. Download or clone the GitHub file to your local
@@ -26,4 +28,4 @@ JavaScript. Might not be compatible with all browsers and assistive technologies
 ## Resources Used
 google. of course. &&
 all documentation ever.
-&& my brain, which has grown in capacity the last few months as I've progressed through the Udacity nanodegree program. 
+&& my brain, which has grown in capacity the last few months as I've progressed through the Udacity nanodegree program.
