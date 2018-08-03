@@ -1,19 +1,11 @@
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header header header"
-    "name name name name name"
-    "main main main main main"
-    "title title title title title";
+.innerContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    /* grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer"; */
+.list {
+  grid-area: list;
+  list-style-type: none;
 }
 
 .header {
@@ -21,29 +13,36 @@
 }
 
 .catName {
-  grid-area: name;
+  grid-area: hero;
 }
 
 .heroImg {
-  grid-area: main;
+  grid-area: hero;
   width: 300px;
   height: 300px;
   padding: 1rem;
 }
 
-.Ray {
-  grid-column-start: 2;
-}
-
-.Lita {
-  grid-column-start: 4;
-}
+/* .Ray {
+  grid-column-start: 1;
+} */
 
 .countTitle {
-  grid-area: main;
+  grid-area: hero;
   padding: 1rem;
 }
 
 .count {
-  grid-area: main;
+  grid-area: hero;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "list hero"
+    ;
 }
