@@ -1,21 +1,8 @@
 let heroImg = document.getElementsByClassName('heroImg');
 let countTitle = document.getElementsByClassName('countTitle');
 let count = document.getElementsByClassName('count');
-// let counterRay = 0;
-// let counterLita = 0;
-//
-//
-// heroImg[0].addEventListener('click', function(){
-//   console.log('left-click');
-//   counterRay ++
-//   count[0].innerHTML = counterRay;
-// });
-// heroImg[1].addEventListener('click', function(){
-//   console.log('right-click');
-//   counterLita ++
-//   count[1].innerHTML = counterLita;
-// });
 
+//counter
 for (var i = 0; i < heroImg.length; i++){
   let cat = heroImg[i];
   let counter = 0;
@@ -27,18 +14,40 @@ for (var i = 0; i < heroImg.length; i++){
       counter ++
       loveCounter.textContent = counter;
     };
-
-
-
   }(cat));
+}
+
+//hide the cats initially
+let catLink = document.getElementsByClassName('catLink');
+let cats = document.getElementsByClassName('cat');
+
+let hideCats = function(cat) {
+  for (var i = 0; i < cats.length; i++) {
+    let cat = cats[i];
+    cat.style.display = 'none';
+    console.log(cat);
+  }
+}
+hideCats();
+
+//show the cats on click
+for (var i = 0; i < catLink.length; i++){
+  let catName = catLink[i];
+  let cats = document.getElementsByClassName('cat');
+  let cat = cats[i];
+
+  catName.addEventListener('click', function(){
+    cat.style.display = 'block';
+  })
 }
 
 //I think I should be making these cats with a constructor
 // class Cat {
-//   constructor (name, love) {
+//   constructor (name, image, love) {
 //     this.name = name;
+//     this.image = image
 //     this.love = countClicks();
 //   }
 // }
 //
-// let Ray = new Cat();
+// let Ray = new Cat('Ray', );
